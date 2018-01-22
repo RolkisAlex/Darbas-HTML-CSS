@@ -4,11 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Kontaktai</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        #map {
+            height: 800px;
+            width: 100% ;
+        }
+    </style>
 </head>
 <body>
 <a href="CSS.html" STYLE="color: black"><img src="https://cdn1.iconfinder.com/data/icons/freeline/32/home_house_real_estate-512.png" height="50" width="50" > </a>
 <a href="Apie.html" style="color: black"><img src="https://cdn1.iconfinder.com/data/icons/freeline/32/lock_locked_log_login_padlock_password_private_protection_register_registration_registry_safe_safety_secret_secure_security-48.png" height="50" width="50" </a>
 <a href="Kontaktai.html" style="color: black"><img src="https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-48.png"></a>
 <a href="Prisijungimas.html" style="color: firebrick"><img src="https://cdn1.iconfinder.com/data/icons/freeline/32/email_envelope_letter_mail-48.png"></a>
+
+<h2 align="center" >Asmeniniai kontaktai</h2>
+
+<p align="center" > <font size="16" color="#00008b">Rolandas Aleksiūnas</p>
+<p align="center"> <font size="16" color="#f0ffff">r.aleksiunas@inbox.lt </p>
+<br/>
+
+<div id="map"></div>
+
+<script>
+    function initMap() {
+        var location = { lat: 54.898, lng: 23.903};
+        var map = new google.maps.Map(document.getElementById("map"),{
+            zoom: 4,
+            center: location
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbC342b3Jsus1cEIgr1dWWT4j6PGC2Ykgcallback=initMap">
+</script>
+
+</div>
 </body>
+
 </html>
